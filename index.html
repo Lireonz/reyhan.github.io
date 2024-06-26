@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- styles.css start -->
+    <link rel="stylesheet" href="styles2.css">
+    <style>
+        /* CSS tambahan untuk dot */
+        .typing-effect {
+            position: relative;
+            display: inline-block;
+            margin-right: 10px; /* jarak antara teks dan dot */
+        }
+        .typing-dot {
+            font-size: 1.5em; /* ukuran dot */
+            display: inline-block;
+            vertical-align: middle; /* menengahkan vertikal dot dengan teks */
+            animation: typing-dot 1s infinite; /* animasi untuk dot */
+        }
+        @keyframes typing-dot {
+            50% {
+                opacity: 0;
+            }
+        }
+    </style>
+    <!-- styles.css end -->
+    <title>Portofolio Reyhan</title>
+</head>
+<body>
+    <!-- nav start -->
+    <header class="nav-section">
+        <nav>
+            <a href="#Home" style="--clr:#ff0000;" class="active">
+                <span class="icon"><ion-icon name="home"></ion-icon></span>
+                <span class="text">Home</span>
+            </a>
+            <a href="#About" style="--clr:#5eff00;">
+                <span class="icon"><ion-icon name="person"></ion-icon></span>
+                <span class="text">About</span>
+            </a>
+            <a href="#Project" style="--clr:#000000;">
+                <span class="icon"></ion-icon><ion-icon name="terminal"></ion-icon></span>
+                <span class="text">Project</span>
+            </a>
+            <a href="#Contact" style="--clr:#00ff6a;">
+                <span class="icon"><ion-icon name="call"></ion-icon></span>
+                <span class="text">Contact</span>
+            </a>
+            <div class="indicator"></div>
+        </nav>
+    </header>
+    <!-- nav end -->
+
+    <!-- home start -->
+    <section id="Home" class="home-section">
+        <div class="container">
+            <div class="text-section">
+                <h1>Hello there!</h1>
+                <h1>I'M Reyhan Permana</h1>
+                <div class="search-bar">
+                    <span id="typed"></span>
+                </div>
+            </div>
+            <div class="image-section">
+                <img src="https://eshaal-dev.vercel.app/assets/Avatar-Buj_4PpF.png" alt="Foto Elegan" class="profile-image">
+            </div>
+        </div>
+    </section>
+    <!-- home end -->
+
+    <!-- about start -->
+    <section id="About" class="about-section">
+        
+    <div class="about-me-container">
+        <div class="profile">
+            <img src="https://avatars.githubusercontent.com/u/169956669?v=4" alt="Profile Picture" class="profile-pic">
+            <h1>Reyhan Permana</h1>
+            <p>Hello, my name is Reyhan Permana. I am a graduate of Computer and Network Engineering. I am interested in becoming a Front-end Engineer, which is why I created this personal website so that others can easily get to know me. I also have several skills that I am currently improving, which may be useful in the future.</p>
+        </div>
+        <div class="skills">
+            <h2>Skills</h2>
+            <table>
+              <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+              </tr>
+              <tr>
+                  <td>Linux Server</td>
+                  <td>Intermediate</td>
+              </tr>
+              <tr>
+                  <td>Crimping LAN Cable</td>
+                  <td>Advanced</td>
+              </tr>
+              <tr>
+                  <td>Splicing Fiber Optic</td>
+                  <td>Intermediate</td>
+              </tr>
+              <tr>
+                  <td>Ms Office</td>
+                  <td>Intermediate</td>
+              </tr>
+              <tr>
+                  <td>HTML</td>
+                  <td>Intermediate</td>
+              </tr>
+              <tr>
+                  <td>CSS</td>
+                  <td>Intermediate</td>
+              </tr>
+              <tr>
+                  <td>JavaScript</td>
+                  <td>Beginer</td>
+              </tr>
+                <!-- Add more skills as needed -->
+            </table>
+        </div>
+    </div>
+    
+    </section>
+    <!-- about end -->
+
+    <!-- project Start -->
+    <section id="Project" class="projects-section">
+        <div class="project-list">
+            <div class="project-item">
+                <img src="https://i.pinimg.com/564x/82/a5/50/82a550e1bf2dd545fd94ad283f1307be.jpg" alt="Project 2" class="project-image">
+                <h3 class="project-title">Pembuatah sebuah srever dalam ubuntu.</h3>
+                <p class="project-description">melakukan konfigurasi untuk membuat server melalui ubuntu.</p>
+                <ul class="project-features">
+                </ul>
+                <a href="https://www.instagram.com/p/C78SoNxv4Xz/?igsh=MTdqbDJieHNxZWk3MQ==" class="project-link">View on Instagram</a>
+            </div>
+
+            <div class="project-item">
+                <img src="https://i.pinimg.com/736x/27/a1/af/27a1af58021cd639e2dd6fb64f9babac.jpg" alt="Project 2" class="project-image">
+                <h3 class="project-title">Pembuatan sebuah Website</h3>
+                <p class="project-description">belajar membuat web untuk diri sendiri.</p>
+                <ul class="project-features">
+                </ul>
+                <a href="https://www.instagram.com/p/C78SoNxv4Xz/?igsh=MTdqbDJieHNxZWk3MQ==" class="project-link">View on Instagram</a>
+            </div>
+        </div>
+    </section>
+    <!-- Project end -->
+
+    <!-- contact start -->
+    <section id="Contact" class="contact-section">a
+    </section>
+    <!-- contact end -->
+
+    <!-- script.js -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="home.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script>
+        let sec = document.querySelectorAll('section');
+        let links = document.querySelectorAll('header nav a');
+        
+        window.onscroll = () => {
+            sec.forEach(section => {
+                let top = window.scrollY;
+                let offset = section.offsetTop;
+                let height = section.offsetHeight;
+                let id = section.getAttribute('id');
+                
+                if (top >= offset && top < offset + height) {
+                    links.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
