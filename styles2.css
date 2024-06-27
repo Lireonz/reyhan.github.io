@@ -285,7 +285,7 @@ header nav a:nth-child(4).active ~ .indicator{
     .project-description {
         padding: 0 16px;
         font-size: 1em;
-        color: #474747;
+        color: #000000;
     }
 
     .project-features {
@@ -316,33 +316,116 @@ header nav a:nth-child(4).active ~ .indicator{
         background-color: #0056b3;
     }
 }
-
+.contact-section{
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Menggunakan seluruh tinggi layar */
+    
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Mengatur agar konten di dalam main-container berurutan secara vertikal */
+        text-align: center; /* Mengatur teks dalam kontainer utama agar berada di tengah */
+    }
+    
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px 30px;
+        border-radius: 20px;
+        color: #000000;
+        border: 1px rgba(0,0,0,0.35) solid;
+        margin: 10px;
+        transition: 0.6s;
+        background-color: #5e5e5e; /* Tambahkan background putih untuk kontras */
+        width: 300px; /* Atur lebar default kartu */
+        transform: scale(2); /* Ubah nilai ini untuk memperbesar atau memperkecil */
+    }
+    
+    .cards:hover {
+        box-shadow: 5px 5px 20px rgb(50, 153, 255);
+    }
+    
+    .cards img {
+        transition: 0.2s;
+        width: 120px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        padding: 2px;
+    }
+    
+    .cards:hover img {
+        outline: 4px solid #5da9ff;
+    }
+    
+    .cards p {
+        color: #aaa;
+    }
+    
+    .sosmed a i {
+        color: #ffffff;
+        font-size: 15px;
+        transition: 0.5s;
+        padding: 10px 0;
+    }
+    
+    .sosmed a i:hover {
+        transform: scale(1.5);
+        color: #ff0000;
+    }
+    
+    .sosmed {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+    
+    h1 {
+        margin: 20px 0;
+    }
+    
+}
 @media (max-width: 768px) {
     .project-list {
         flex-direction: column;
         align-items: center;
     }
+    .projects-section {
+        padding: 40px 20px;
+        background-color: #fff;
+        height: 190vh;
+        .project-image {
+            box-shadow: 0 0 25px rgba(54, 54, 54, 0.582);
+            width: 350px;
+            height: 300px;
+        }
+        .project-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            max-width: 350px;
+            transition: transform 0.3s ease;
+        }
+        
+    }
 }
-
-@media (max-width: 992px) {
+@media (max-width: 489px) {
     .container {
         flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .text-section {
+        display: flex;
+        align-items: center;
+        max-width: 1200px;
         width: 100%;
+        padding: 20px;
+        background-color: #ffffff00;
+        border-radius: 10px;
     }
-
-    .image-section {
-        width: 60%;
-        text-align: center;
-        margin-top: 20px;
-    }
-}
-
-/* Media Query for mobile devices */
-@media (max-width: 489px) {
     .text-section h1 {
         font-size: 2em;
     }
@@ -359,5 +442,51 @@ header nav a:nth-child(4).active ~ .indicator{
         width: 75%;
         text-align: center;
         margin-top: 10px;
+    }
+    .projects-section {
+        background-color: #fff;
+        height: 200vh;
+        .project-image {
+            box-shadow: 0 0 25px rgba(54, 54, 54, 0.582);
+            width: 250px;
+            height: 250px;
+        }
+        .project-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            overflow: hidden;
+            max-width: 250px;
+            transition: transform 0.3s ease;
+        }
+    }
+    
+    .contact-section{
+        height: 100vh;
+        .cards {
+            align-items: center;
+            justify-content: center;
+            padding: 20px 30px;
+            border-radius: 20px;
+            color: #000000;
+            border: 1px rgba(0,0,0,0.35) solid;
+            margin: 10px;
+            transition: 0.6s;
+            background-color: #8b8b8b; /* Tambahkan background putih untuk kontras */
+            width: 300px; /* Atur lebar default kartu */
+            transform: scale(1); /* Ubah nilai ini untuk memperbesar atau memperkecil */
+        }
+        .sosmed a i {
+            color: #646464;
+            font-size: 20px;
+            transition: 0.5s;
+            padding: 10px 0;
+        }
+        .sosmed a i:hover {
+            transform: scale(1.5);
+            color: #1100ff;
+        }
+        
     }
 }
