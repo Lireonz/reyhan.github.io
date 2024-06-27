@@ -463,7 +463,7 @@ header nav a:nth-child(4).active ~ .indicator{
     }
     
     .contact-section{
-        height: 100vh;
+        height: 110vh;
         .cards {
             align-items: center;
             justify-content: center;
